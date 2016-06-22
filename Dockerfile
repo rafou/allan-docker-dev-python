@@ -34,6 +34,7 @@ RUN \
     apt-get -y install \
         libffi-dev \
         libyaml-dev \
+        libssl-dev \
         libpython-dev \
         python \
         python-pip \
