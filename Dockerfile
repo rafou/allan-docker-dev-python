@@ -42,7 +42,9 @@ RUN \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* && \
     # we put the 'last time apt-get update was run' file far in the past \
     # so that ansible can then re-run apt-get update \
-    touch -t 197001010000 /var/lib/apt/periodic/update-success-stamp
+    touch -t 197001010000 /var/lib/apt/periodic/update-success-stamp && \
+    # fix the tty error on vagrant \
+    sed -i '/tty/!s/mesg n/tty -s \\&\\& mesg n/' /root/.profile
 
 COPY provisioning/ /provisioning
 RUN \
