@@ -48,7 +48,7 @@ RUN \
     chmod u-w ${SUDOFILE} && \
     apt-get clean && \
     # install ansible
-    pip install ansible && \
+    pip install --upgrade ansible setuptools && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* && \
     # we put the 'last time apt-get update was run' file far in the past \
     # so that ansible can then re-run apt-get update \
