@@ -31,6 +31,7 @@ RUN \
     # Install python (otherwise ansible will not work) \
     # Install aptitude, since ansible needs it (only apt-get is installed) \
     apt-get -y update && \
+    apt-get -y upgrade && \
     apt-get -y install \
         libffi-dev \
         libyaml-dev \
