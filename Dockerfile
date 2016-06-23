@@ -37,6 +37,7 @@ RUN \
         libssl-dev \
         libpython-dev \
         python \
+        python-setuptools   \
         python-pip \
         aptitude \
     && \
