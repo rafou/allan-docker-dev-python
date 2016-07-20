@@ -55,7 +55,7 @@ RUN \
     # so that ansible can then re-run apt-get update \
     touch -t 197001010000 /var/lib/apt/periodic/update-success-stamp && \
     # fix the tty error on vagrant \
-    sed -i '/tty/!s/mesg n/tty -s \\&\\& mesg n/' /root/.profile
+    sed -i '/tty/!s/mesg n//' /root/.profile
 
 COPY provisioning/ /provisioning
 RUN \
