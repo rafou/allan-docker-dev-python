@@ -76,4 +76,8 @@ colorscheme torte
 
 let g:syntastic_aggregate_errors = 1
 
+" workaround https://github.com/vim/vim/issues/704
+" which is not fixed in ubuntu
+autocmd VimEnter * set autochdir
+
 execute pathogen#infect()
