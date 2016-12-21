@@ -28,6 +28,9 @@
        - man-db
        - libssl-dev # used by python2 for SSL checking
        - libffi-dev
+       - python3-dev
+       - python3-pip
+  
 
   roles:
     - zsh
