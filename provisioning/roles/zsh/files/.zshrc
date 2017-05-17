@@ -37,6 +37,8 @@ bindkey '^?' backward-delete-char
 
 bindkey j accept-line
 bindkey g complete-word
+bindkey '^[[1;5C' forward-word
+bindkey '^[[1;5D' backward-word
 
 ###################
 ## Options Settings
