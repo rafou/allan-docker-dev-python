@@ -15,17 +15,18 @@
         update_cache=yes 
         cache_valid_time=86400
       with_items:
+       - sudo
        - git
        - tig
        - vim
        - gcc
        - gdb
-       - cgdb
        - bash-completion # Not included in the docker image
        - make
        - tree
        - htop
        - man-db
+       - software-properties-common
        - libssl-dev # used by python2 for SSL checking
        - libffi-dev
        - python3-dev
@@ -34,4 +35,4 @@
 
   roles:
     - zsh
-    - vim
+    - neovim
