@@ -37,3 +37,4 @@
   roles:
     - zsh
     - neovim
+    - python3.6
