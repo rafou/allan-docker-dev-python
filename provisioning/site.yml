@@ -18,9 +18,9 @@
        - sudo
        - git
        - tig
-       - vim
        - gcc
        - gdb
+       - cloc
        - bash-completion # Not included in the docker image
        - make
        - tree
