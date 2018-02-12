@@ -44,6 +44,9 @@ Plug 'ntpeters/vim-better-whitespace'
 
 Plug 'benekastah/neomake'
 
+" for a more rational python indentation
+Plug 'Vimjas/vim-python-pep8-indent'
+
 
 " Initialize plugin system
 call plug#end()
