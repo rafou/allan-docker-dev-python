@@ -39,6 +39,7 @@ RUN \
         libssl-dev \
         libpython-dev \
         python \
+        python-virtualenv \
         python-setuptools   \
         python-pip \
         aptitude \
