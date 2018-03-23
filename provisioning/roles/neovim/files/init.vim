@@ -67,6 +67,14 @@ nnoremap <silent> K :call LanguageClient_textDocument_hover()<CR>
 nnoremap <silent> gd :call LanguageClient_textDocument_definition()<CR>
 nnoremap <silent> <F2> :call LanguageClient_textDocument_rename()<CR>
 
+# So that we don't need to reach <ESC> key
+# or `:`
+map <A-j> <ESC>
+map <A-f> :w<CR>
+map <A-d> :wq<CR>
+inoremap <A-j> <esc>
+cnoremap <A-j> <ESC>
+
 " used by deoplete
 let g:deoplete#enable_at_startup = 1
 
