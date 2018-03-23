@@ -78,6 +78,16 @@ alias JJ="cd .."
 alias vi=nvim
 alias vim=nvim
 
+alias gs="git status"
+alias gm="git checkout master"
+alias gp="git pull origin"
+alias ga="git commit --amend --no-edit"
+
+function gf {
+   git push -f origin \"$(git rev-parse --abbrev-ref HEAD)\"
+}
+
+
 #########
 # In order to not to have to type rehash each
 # time you install / update software
