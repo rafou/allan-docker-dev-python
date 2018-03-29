@@ -84,8 +84,11 @@ alias gp="git pull origin"
 alias ga="git commit --amend --no-edit"
 
 function gf {
-   git push -f origin \"$(git rev-parse --abbrev-ref HEAD)\"
+   git push -f origin "$(git rev-parse --abbrev-ref HEAD)"
 }
+
+alias gss="git stash"
+alias gsa="git stash apply"
 
 
 #########
