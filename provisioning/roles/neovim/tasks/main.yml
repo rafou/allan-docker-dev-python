@@ -36,6 +36,10 @@
 
   - name: Installing python3 language server mypy plugin
     command: pip3 install pyls-mypy
+    
+
+  - name: Installing python3 language server extensions
+    command: pip3 install flake8 rope
 
 # Copy the init file
   - name: copy init files in rc folder
