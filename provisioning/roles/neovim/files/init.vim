@@ -31,8 +31,11 @@ endif
 " - Avoid using standard Vim directory names like 'plugin'
 call plug#begin('~/.local/share/nvim/plugged')
 
-
-Plug 'autozimu/LanguageClient-neovim', { 'do': ':UpdateRemotePlugins' }
+Plug 'autozimu/LanguageClient-neovim', {
+    \ 'branch': 'next',
+    \ 'do': 'bash install.sh',
+    \
+    \}
 " for autocompletion
 
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
