@@ -37,11 +37,11 @@ RUN \
         libffi-dev \
         libyaml-dev \
         libssl-dev \
-        libpython-dev \
-        python \
-        python-virtualenv \
-        python-setuptools   \
-        python-pip \
+        libpython3-dev \
+        python3 \
+        python3-virtualenv \
+        python3-setuptools   \
+        python3-pip \
         aptitude \
     && \
     # Enable password-less sudo for all user (including the 'vagrant' user) \
@@ -50,7 +50,7 @@ RUN \
     chmod u-w ${SUDOFILE} && \
     apt-get clean && \
     # install ansible
-    pip install --upgrade ansible setuptools && \
+    pip3 install --upgrade ansible setuptools && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* && \
     # we put the 'last time apt-get update was run' file far in the past \
     # so that ansible can then re-run apt-get update \
