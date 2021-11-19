@@ -5,12 +5,8 @@ if ! command -v docker &>/dev/null; then
     exit 1
 fi
 
-if ! groups | grep '\bdocker\b' --only-matching &>/dev/null ; then 
-    >&2 echo "Current user is not member of docker group"
-    exit 2
-fi
 
-docker build \
+docker buildx build \
     --rm \
     --tag=python_dev_docker \
     .

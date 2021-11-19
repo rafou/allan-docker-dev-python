@@ -1,5 +1,5 @@
 # Re-use the phusion baseimage which runs an SSH server etc
-FROM phusion/baseimage:0.11
+FROM phusion/baseimage:master-arm64
 
 # Some definitions
 ENV SUDOFILE /etc/sudoers
